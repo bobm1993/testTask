@@ -1,4 +1,4 @@
-binary_digit = [1, 0, 0, 0]
+binary_digit = [1, 1, 1, 0, 0, 1, 1]
 
 
 def decimal_output(bin_temp):
@@ -14,7 +14,7 @@ def decimal_output(bin_temp):
             quit()
     for idx, val in enumerate(bin_temp):
         if val == 1:
-            dec_value += 1*((-2)**idx)
+            dec_value += (-2)**idx
     inv_value = -1 * dec_value
     inv_value_saved = inv_value
     if bin_temp == [0]:
